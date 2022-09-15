@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "../sdk/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h"
-#include "../sdk/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h"
 #include "../sdk/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h"
 
 #include <rcl/rcl.h>
@@ -14,7 +12,7 @@
 #include <std_msgs/msg/multi_array_layout.h>
 
 #include <rmw_microros/rmw_microros.h>
-#include "pico/stdlib.h"
+// #include "pico/stdlib.h"
 #include "pico_uart_transports.h"
 
 

@@ -74,6 +74,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "../sdk/micro_ros_raspberrypi_pico_sdk"
   "../sdk/micro_ros_raspberrypi_pico_sdk/libmicroros/include"
   "/home/ben/pico-sdk/src/common/pico_stdlib/include"
   "/home/ben/pico-sdk/src/rp2_common/hardware_gpio/include"
@@ -119,6 +120,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/ben/pico-sdk/src/rp2_common/pico_unique_id/include"
   "/home/ben/pico-sdk/src/rp2_common/hardware_flash/include"
   "/home/ben/pico-sdk/src/common/pico_usb_reset_interface/include"
+  "/home/ben/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 
 # The set of dependency files which are needed:
@@ -154,6 +156,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ben/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "/home/ben/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "/home/ben/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
@@ -186,7 +189,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles/pico_uart_transport.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

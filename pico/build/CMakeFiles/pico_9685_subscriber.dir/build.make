@@ -1038,6 +1038,20 @@ CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_fl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
+CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/pico_9685_subscriber.dir/flags.make
+CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/pico_9685_subscriber.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d -o CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -c /home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 # Object files for target pico_9685_subscriber
 pico_9685_subscriber_OBJECTS = \
 "CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.cpp.obj" \
@@ -1109,7 +1123,8 @@ pico_9685_subscriber_OBJECTS = \
 "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" \
-"CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+"CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
+"CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 
 # External object files for target pico_9685_subscriber
 pico_9685_subscriber_EXTERNAL_OBJECTS =
@@ -1184,11 +1199,11 @@ pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/
 pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/build.make
-pico_9685_subscriber.elf: libpico_uart_transport.a
 pico_9685_subscriber.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 pico_9685_subscriber.elf: CMakeFiles/pico_9685_subscriber.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking CXX executable pico_9685_subscriber.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking CXX executable pico_9685_subscriber.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pico_9685_subscriber.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /home/ben/ros2_ws/src/spot_micro/pico/build/pico_9685_subscriber.elf pico_9685_subscriber.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /home/ben/ros2_ws/src/spot_micro/pico/build/pico_9685_subscriber.elf pico_9685_subscriber.bin

@@ -10,16 +10,23 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 link_directories(sdk/micro_ros_raspberrypi_pico_sdk/libmicroros)
+link_directories(sdk/micro_ros_raspberrypi_pico_sdk)
+# link_libraries(pico_stdlib microros)
+include_directories(sdk/micro_ros_raspberrypi_pico_sdk)
+add_subdirectory(sdk/micro_ros_raspberrypi_pico_sdk)
 
-add_library(pico_uart_transport 
- sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transports.h
- sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c 
-)
+# add_library(pico_uart_transport 
+#  sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transports.h
+#  sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c 
+# )
+find_library(micrros)
 
 add_executable(pico_9685_subscriber src/pico_9685_subscriber.cpp sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c)
-target_link_libraries(pico_9685_subscriber pico_stdlib microros pico_uart_transport)
-target_include_directories(pico_9685_subscriber PUBLIC sdk/micro_ros_raspberrypi_pico_sdk/libmicroros/include)
-
+target_link_libraries(pico_9685_subscriber pico_stdlib microros hardware_i2c)
+target_include_directories(pico_9685_subscriber PUBLIC 
+sdk/micro_ros_raspberrypi_pico_sdk/libmicroros/include
+sdk/micro_ros_raspberrypi_pico_sdk
+)
 
 SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -ffunction-sections -fdata-sections")
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -ffunction-sections -fdata-sections")

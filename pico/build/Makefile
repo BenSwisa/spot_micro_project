@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pico_uart_transport
-
-# Build rule for target.
-pico_uart_transport: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico_uart_transport
-.PHONY : pico_uart_transport
-
-# fast build rule for target.
-pico_uart_transport/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_uart_transport.dir/build.make CMakeFiles/pico_uart_transport.dir/build
-.PHONY : pico_uart_transport/fast
-
-#=============================================================================
 # Target rules for targets named pico_9685_subscriber
 
 # Build rule for target.
@@ -141,19 +128,6 @@ pico_9685_subscriber: cmake_check_build_system
 pico_9685_subscriber/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/build
 .PHONY : pico_9685_subscriber/fast
-
-#=============================================================================
-# Target rules for targets named ELF2UF2Build
-
-# Build rule for target.
-ELF2UF2Build: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ELF2UF2Build
-.PHONY : ELF2UF2Build
-
-# fast build rule for target.
-ELF2UF2Build/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
-.PHONY : ELF2UF2Build/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -232,6 +206,32 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: cmake_check_build_system
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named pico_micro_ros_example
+
+# Build rule for target.
+pico_micro_ros_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico_micro_ros_example
+.PHONY : pico_micro_ros_example
+
+# fast build rule for target.
+pico_micro_ros_example/fast:
+	$(MAKE) $(MAKESILENT) -f sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/pico_micro_ros_example.dir/build.make sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/pico_micro_ros_example.dir/build
+.PHONY : pico_micro_ros_example/fast
+
+#=============================================================================
+# Target rules for targets named ELF2UF2Build
+
+# Build rule for target.
+ELF2UF2Build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ELF2UF2Build
+.PHONY : ELF2UF2Build
+
+# fast build rule for target.
+ELF2UF2Build/fast:
+	$(MAKE) $(MAKESILENT) -f sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/ELF2UF2Build.dir/build.make sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/ELF2UF2Build.dir/build
+.PHONY : ELF2UF2Build/fast
 
 home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
@@ -985,6 +985,30 @@ home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1694,7 +1718,6 @@ sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.obj: sdk/micro_ros_raspbe
 
 # target to build an object file
 sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_uart_transport.dir/build.make CMakeFiles/pico_uart_transport.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj
 .PHONY : sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj
 
@@ -1703,7 +1726,6 @@ sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.i: sdk/micro_ros_raspberr
 
 # target to preprocess a source file
 sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_uart_transport.dir/build.make CMakeFiles/pico_uart_transport.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.i
 .PHONY : sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.i
 
@@ -1712,7 +1734,6 @@ sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.s: sdk/micro_ros_raspberr
 
 # target to generate assembly for a file
 sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_uart_transport.dir/build.make CMakeFiles/pico_uart_transport.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s
 .PHONY : sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s
 
@@ -1756,7 +1777,7 @@ help:
 	@echo "... cyw43_firmware_package"
 	@echo "... bs2_default"
 	@echo "... pico_9685_subscriber"
-	@echo "... pico_uart_transport"
+	@echo "... pico_micro_ros_example"
 	@echo "... home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1851,6 +1872,9 @@ help:
 	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/ben/pico-sdk/src/rp2_common/hardware_irq/irq.s"

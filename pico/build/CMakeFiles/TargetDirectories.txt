@@ -1,6 +1,4 @@
-/home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles/pico_uart_transport.dir
 /home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles/pico_9685_subscriber.dir
-/home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles/ELF2UF2Build.dir
 /home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles/edit_cache.dir
 /home/ben/ros2_ws/src/spot_micro/pico/build/CMakeFiles/rebuild_cache.dir
 /home/ben/ros2_ws/src/spot_micro/pico/build/pico-sdk/CMakeFiles/edit_cache.dir
@@ -155,3 +153,9 @@
 /home/ben/ros2_ws/src/spot_micro/pico/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/rebuild_cache.dir
 /home/ben/ros2_ws/src/spot_micro/pico/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /home/ben/ros2_ws/src/spot_micro/pico/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/pico_micro_ros_example.dir
+/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/ELF2UF2Build.dir
+/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/edit_cache.dir
+/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/rebuild_cache.dir
+/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/pico-sdk/CMakeFiles/edit_cache.dir
+/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/pico-sdk/CMakeFiles/rebuild_cache.dir
