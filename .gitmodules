@@ -4,3 +4,6 @@
 [submodule "pico/sdk/pico-sdk"]
 	path = pico/sdk/pico-sdk
 	url = https://github.com/raspberrypi/pico-sdk.git
+[submodule "pico/include/PCA9685_Servo_Controller"]
+	path = pico/include/PCA9685_Servo_Controller
+	url = https://github.com/aleopardstail/PCA9685_Servo_Controller.git

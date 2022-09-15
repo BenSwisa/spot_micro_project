@@ -11,6 +11,8 @@ pico_sdk_init()
 
 link_directories(sdk/micro_ros_raspberrypi_pico_sdk/libmicroros)
 
+# add_library(PCA_9685 include/PCA9685_Servo_Controller/PCA9685_servo_controller.cpp)
+
 add_executable(pico_9685_subscriber src/pico_9685_subscriber.c sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c)
 target_link_libraries(pico_9685_subscriber pico_stdlib microros hardware_i2c)
 target_include_directories(pico_9685_subscriber PUBLIC 
