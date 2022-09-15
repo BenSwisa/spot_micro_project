@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libpico_uart_transport.a CMakeFiles/pico_uart_transport.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj
+/usr/bin/arm-none-eabi-ranlib libpico_uart_transport.a

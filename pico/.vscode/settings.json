@@ -1,5 +1,5 @@
 {
     "cmake.configureEnvironment": {
-        "PICO_SDK_PATH": "/home/$USER/pico-sdk"
+        "PICO_SDK_PATH": "sdk/pico-sdk"
     },
 }
