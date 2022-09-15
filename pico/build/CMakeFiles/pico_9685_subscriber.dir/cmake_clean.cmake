@@ -128,8 +128,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pico_9685_subscriber.dir/home/ben/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
   "CMakeFiles/pico_9685_subscriber.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj"
   "CMakeFiles/pico_9685_subscriber.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.obj.d"
-  "CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.cpp.obj"
-  "CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.cpp.obj.d"
+  "CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.c.obj"
+  "CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.c.obj.d"
   "pico_9685_subscriber.elf"
   "pico_9685_subscriber.pdb"
 )

@@ -12,7 +12,6 @@
 #include <std_msgs/msg/multi_array_layout.h>
 
 #include <rmw_microros/rmw_microros.h>
-// #include "pico/stdlib.h"
 #include "pico_uart_transports.h"
 
 

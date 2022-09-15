@@ -40,7 +40,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ben/ros2_ws/src/spot_micro/pico/build/pico-sdk/cmake_install.cmake")
-  include("/home/ben/ros2_ws/src/spot_micro/pico/build/sdk/micro_ros_raspberrypi_pico_sdk/cmake_install.cmake")
 
 endif()
 

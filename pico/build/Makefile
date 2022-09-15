@@ -130,6 +130,19 @@ pico_9685_subscriber/fast:
 .PHONY : pico_9685_subscriber/fast
 
 #=============================================================================
+# Target rules for targets named ELF2UF2Build
+
+# Build rule for target.
+ELF2UF2Build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ELF2UF2Build
+.PHONY : ELF2UF2Build
+
+# fast build rule for target.
+ELF2UF2Build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
+.PHONY : ELF2UF2Build/fast
+
+#=============================================================================
 # Target rules for targets named bs2_default
 
 # Build rule for target.
@@ -206,32 +219,6 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: cmake_check_build_system
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
-
-#=============================================================================
-# Target rules for targets named pico_micro_ros_example
-
-# Build rule for target.
-pico_micro_ros_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico_micro_ros_example
-.PHONY : pico_micro_ros_example
-
-# fast build rule for target.
-pico_micro_ros_example/fast:
-	$(MAKE) $(MAKESILENT) -f sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/pico_micro_ros_example.dir/build.make sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/pico_micro_ros_example.dir/build
-.PHONY : pico_micro_ros_example/fast
-
-#=============================================================================
-# Target rules for targets named ELF2UF2Build
-
-# Build rule for target.
-ELF2UF2Build: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ELF2UF2Build
-.PHONY : ELF2UF2Build
-
-# fast build rule for target.
-ELF2UF2Build/fast:
-	$(MAKE) $(MAKESILENT) -f sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/ELF2UF2Build.dir/build.make sdk/micro_ros_raspberrypi_pico_sdk/CMakeFiles/ELF2UF2Build.dir/build
-.PHONY : ELF2UF2Build/fast
 
 home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
@@ -1737,29 +1724,29 @@ sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s
 .PHONY : sdk/micro_ros_raspberrypi_pico_sdk/pico_uart_transport.c.s
 
-src/pico_9685_subscriber.obj: src/pico_9685_subscriber.cpp.obj
+src/pico_9685_subscriber.obj: src/pico_9685_subscriber.c.obj
 .PHONY : src/pico_9685_subscriber.obj
 
 # target to build an object file
-src/pico_9685_subscriber.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.cpp.obj
-.PHONY : src/pico_9685_subscriber.cpp.obj
+src/pico_9685_subscriber.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.c.obj
+.PHONY : src/pico_9685_subscriber.c.obj
 
-src/pico_9685_subscriber.i: src/pico_9685_subscriber.cpp.i
+src/pico_9685_subscriber.i: src/pico_9685_subscriber.c.i
 .PHONY : src/pico_9685_subscriber.i
 
 # target to preprocess a source file
-src/pico_9685_subscriber.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.cpp.i
-.PHONY : src/pico_9685_subscriber.cpp.i
+src/pico_9685_subscriber.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.c.i
+.PHONY : src/pico_9685_subscriber.c.i
 
-src/pico_9685_subscriber.s: src/pico_9685_subscriber.cpp.s
+src/pico_9685_subscriber.s: src/pico_9685_subscriber.c.s
 .PHONY : src/pico_9685_subscriber.s
 
 # target to generate assembly for a file
-src/pico_9685_subscriber.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.cpp.s
-.PHONY : src/pico_9685_subscriber.cpp.s
+src/pico_9685_subscriber.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_9685_subscriber.dir/build.make CMakeFiles/pico_9685_subscriber.dir/src/pico_9685_subscriber.c.s
+.PHONY : src/pico_9685_subscriber.c.s
 
 # Help Target
 help:
@@ -1777,7 +1764,6 @@ help:
 	@echo "... cyw43_firmware_package"
 	@echo "... bs2_default"
 	@echo "... pico_9685_subscriber"
-	@echo "... pico_micro_ros_example"
 	@echo "... home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/ben/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
